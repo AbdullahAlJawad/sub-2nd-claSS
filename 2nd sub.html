@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head><title>
+        Glenn Maxwell
+    </title></head>
+    <body>
+        <h1>Assending and Desending</h1>
+        <p>By clicking button the number will assend and desend</p>
+        <p id="maxwell"></p>
+        <p id="maxwell1"></p>
+        <button onclick="asscending()">Assending</button>
+        <button onclick="descending()">Desending</button>
+        <script>
+var jersey =[32,333,7,17,30,28];
+document.getElementById("maxwell").innerHTML=jersey;
+function asscending(){
+    jersey.sort(function(a,b){return a-b});
+    document.getElementById("maxwell").innerHTML=jersey;
+}
+function descending(){
+    jersey.sort(function(a,b){return b-a});
+    document.getElementById("maxwell").innerHTML=jersey;
+}
+var points=[23,70,45,99,77];
+function myfunction(num){
+    return num*10;
+}
+var newarray = points.map(myfunction);
+document.getElementById("maxwell1").innerHTML=newarray;
+function func(){
+    let a = 20;
+    let b = 20;
+    let value = eval(new String(a+b));
+    console.log(value);
+
+}
+func();
+        </script>
+    </body>
+</html>
